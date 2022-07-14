@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CuboPoliticaMigratoria</Database>
+    <Server>DESKTOP-PUBAI9F</Server>
+    <ConnectionString>Data Source=DESKTOP-PUBAI9F;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>DW3pV5QZOJYcu0PAzFpI16cd4j8=13/07/2022 21:57:2513/07/2022 21:57:25</TimeStamp>
+        <ID>
+          <String>DW Migraciones PM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>o8lsh8muFCuxILK37GHK7Q5hfQY=14/07/2022 10:18:4714/07/2022 10:18:46</TimeStamp>
+        <ID>
+          <String>DW Migraciones PM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+x0SLrqoI9xo0NgkAUWgoXHceDU=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Metas Produccion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZiiyQNF7kW68OdjPSxcdkyE4kuE=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RlShfoOqvkTR/YUVI4VGGMNCUEQ=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Paises</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5B568oA5iroTGp3lNJgiwbOkr7k=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Eventos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>V39zszXKjvkdqbmQOGHDS5vrJV0=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Regiones</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FvbgcyZS2c/34PqnM1H9K8hyWug=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim UND Organica</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9RDf5CX/yPsJ8uKYECQy8OANqW0=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Organizadores</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XRbUwVPJoxuKrgn2lc5Kx25lVdw=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Modalidades</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sdEBmivBCZYru0Dqsere/W3BCYA=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Tipos Acuerdo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FkvQeUU1JFlj7i0O5A2wMHi14fs=14/07/2022 10:21:0714/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>Dim Acuerdos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>uMRnqg2bM1dvd7mMYmxXQEw/LJc=14/07/2022 10:21:0714/07/2022 10:20:08sQYg7Hdnu4jLSpXwaqry5MffAi8=14/07/2022 10:20:0814/07/2022 10:20:08</TimeStamp>
+        <ID>
+          <String>DW Migraciones PM</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>slZhl2UXJzZUHGzQ8SRHQE+4+6I=13/07/2022 21:56:0013/07/2022 21:56:00</TimeStamp>
+      <ID>
+        <String>CuboPoliticaMigratoria</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-07-14T15:21:23.63Z</LastDeployed>
+</DeploymentSnapshot>

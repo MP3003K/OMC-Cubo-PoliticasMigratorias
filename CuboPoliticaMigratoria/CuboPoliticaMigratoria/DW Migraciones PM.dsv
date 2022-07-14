@@ -1,0 +1,390 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="26ed427d-5040-4f53-8718-e62d1e8118d1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Migraciones PM</ID>
+  <Name>DW Migraciones PM</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW Migraciones PM</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_Migraciones_x0020_PM" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_Migraciones_x0020_PM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ccfdd268-f902-4067-b2ad-00afc77464c1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DW_DimAcuerdos" msprop:design-time-name="1380814a-e795-4c35-bc97-fcb586fbe449" msprop:DbTableName="DimAcuerdos" msprop:FriendlyName="DimAcuerdos" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdAcuerdo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9220fbae-7d69-41e5-88cd-c74c6c928d95" msprop:DbColumnName="IdAcuerdo" msprop:FriendlyName="IdAcuerdo" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="6b909a0d-0c07-44d3-87de-5fbca29f5752" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Estado" msprop:design-time-name="82a5fe04-692c-4cdb-98c5-c2fea8ff118b" msprop:DbColumnName="Estado" msprop:FriendlyName="Estado" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimEventos" msprop:design-time-name="1a18e86c-4bda-496f-aa13-9b6f6b9d4d0d" msprop:DbTableName="DimEventos" msprop:FriendlyName="DimEventos" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdEvento" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9f02afa7-4750-4335-ba96-aeb5ceac0b95" msprop:DbColumnName="IdEvento" msprop:FriendlyName="IdEvento" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="b0e9cdaf-86b4-4c19-ae9a-2b4fe37bd6a8" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="250" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimMetasProduccion" msprop:design-time-name="bdbec84b-b495-413b-85bd-3b0dc1e4ac23" msprop:DbTableName="DimMetasProduccion" msprop:FriendlyName="DimMetasProduccion" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdMetaFisica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="289477eb-984b-4c3e-a7c2-e5df07942d9d" msprop:DbColumnName="IdMetaFisica" msprop:FriendlyName="IdMetaFisica" type="xs:int" />
+                  <xs:element name="Meta" msprop:design-time-name="1ff79258-69ed-4651-91a2-ca891092ccdf" msprop:DbColumnName="Meta" msprop:FriendlyName="Meta">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimModalidades" msprop:design-time-name="b3855530-5bcc-4bc0-aae2-a6cd0eebf08b" msprop:DbTableName="DimModalidades" msprop:FriendlyName="DimModalidades" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdModalidad" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f13f7026-3310-45e2-b6f4-089b8cd96eb5" msprop:DbColumnName="IdModalidad" msprop:FriendlyName="IdModalidad" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="dd803c8d-3540-4cc1-b4aa-102775530eae" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimOrganizadores" msprop:design-time-name="8733bea1-08c5-4fdd-9ed7-95820a6260a2" msprop:DbTableName="DimOrganizadores" msprop:FriendlyName="DimOrganizadores" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdOrganizador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8f54d9db-6e21-4579-b915-95ce9c4f3e18" msprop:DbColumnName="IdOrganizador" msprop:FriendlyName="IdOrganizador" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="f532bce0-22dc-49fd-8a04-4b4708bed054" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimPaises" msprop:design-time-name="f2274755-79f4-4276-8365-40aff0b1cf14" msprop:DbTableName="DimPaises" msprop:FriendlyName="DimPaises" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdPais" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e07e36e5-ebc1-48b5-82a3-c8b9bbf2a6fe" msprop:DbColumnName="IdPais" msprop:FriendlyName="IdPais" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="87bb3e6d-f03b-4555-a38d-5a345d697ea0" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimRegiones" msprop:design-time-name="f9b95cb8-2ca9-4252-992f-24a9c2ab1860" msprop:DbTableName="DimRegiones" msprop:FriendlyName="DimRegiones" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_region" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b14f8ead-05a0-42ee-a5ce-051d18d11fb8" msprop:DbColumnName="id_region" msprop:FriendlyName="id_region" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="01c94541-b01d-4af3-9f85-cb682c9b7054" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimTiempo" msprop:design-time-name="7454146f-d764-4b3b-a407-b8a231e8f593" msprop:DbTableName="DimTiempo" msprop:FriendlyName="DimTiempo" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdFecha" msprop:design-time-name="6b40fa9d-aef0-47c4-9b17-d74ba13675fa" msprop:DbColumnName="IdFecha" msprop:FriendlyName="IdFecha" type="xs:dateTime" />
+                  <xs:element name="Fecha" msprop:design-time-name="7090e047-b77c-460f-9ac9-50ef8af69f8e" msprop:DbColumnName="Fecha" msprop:FriendlyName="Fecha" type="xs:int" />
+                  <xs:element name="Año" msprop:design-time-name="33260a07-eebd-4b62-9091-1bc528c08563" msprop:DbColumnName="Año" msprop:FriendlyName="Año" type="xs:short" />
+                  <xs:element name="Trimestre" msprop:design-time-name="71783ac1-ee15-4365-9470-4bae2a0e3461" msprop:DbColumnName="Trimestre" msprop:FriendlyName="Trimestre" type="xs:short" />
+                  <xs:element name="Mes" msprop:design-time-name="6e051b5d-26f1-433c-b6e8-e5671b5fa2e2" msprop:DbColumnName="Mes" msprop:FriendlyName="Mes" type="xs:short" />
+                  <xs:element name="Semana" msprop:design-time-name="04547d97-181f-4980-8b6b-fecdf7b57c89" msprop:DbColumnName="Semana" msprop:FriendlyName="Semana" type="xs:short" />
+                  <xs:element name="Dia" msprop:design-time-name="d6f8c0fc-adfa-4049-8c91-7590cef8681f" msprop:DbColumnName="Dia" msprop:FriendlyName="Dia" type="xs:short" />
+                  <xs:element name="DiaSemana" msprop:design-time-name="19b1783b-f503-4f2e-b148-7a9a7fadae84" msprop:DbColumnName="DiaSemana" msprop:FriendlyName="DiaSemana" type="xs:short" />
+                  <xs:element name="NTrimestre" msprop:design-time-name="9f0a8268-73b5-4d77-9c55-5c8df39c4636" msprop:DbColumnName="NTrimestre" msprop:FriendlyName="NTrimestre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NMes" msprop:design-time-name="6d8bdbdc-c456-4c82-90a8-bfa7bfad43e9" msprop:DbColumnName="NMes" msprop:FriendlyName="NMes">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NMes3L" msprop:design-time-name="d0313319-f686-4f9e-a115-e603d496d0c6" msprop:DbColumnName="NMes3L" msprop:FriendlyName="NMes3L">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NSemana" msprop:design-time-name="cf500ceb-6b22-4941-9966-31ca4eda9fd4" msprop:DbColumnName="NSemana" msprop:FriendlyName="NSemana">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NDia" msprop:design-time-name="7025b5a9-57cd-43c9-94ff-376d9d095d51" msprop:DbColumnName="NDia" msprop:FriendlyName="NDia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NDiaSemana" msprop:design-time-name="4f10881a-114f-4f1a-9d23-ac23f31bf37b" msprop:DbColumnName="NDiaSemana" msprop:FriendlyName="NDiaSemana">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimTiposAcuerdo" msprop:design-time-name="204df50d-9c3a-41d2-a80e-298621178330" msprop:DbTableName="DimTiposAcuerdo" msprop:FriendlyName="DimTiposAcuerdo" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdTipoAcuerdo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="da00957c-715c-411b-9c4c-63968e41376f" msprop:DbColumnName="IdTipoAcuerdo" msprop:FriendlyName="IdTipoAcuerdo" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="dbb24912-9e2b-4334-94d1-42f1bd954b01" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_DimUNDOrganica" msprop:design-time-name="38fd52a9-ba80-4344-ba01-ec1c566d4cb8" msprop:DbTableName="DimUNDOrganica" msprop:FriendlyName="DimUNDOrganica" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdUND" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="518a8578-db47-4557-8149-057d0b76cde3" msprop:DbColumnName="IdUND" msprop:FriendlyName="IdUND" type="xs:int" />
+                  <xs:element name="Nombre" msprop:design-time-name="77d20d58-2c14-4fea-acd6-d65952921923" msprop:DbColumnName="Nombre" msprop:FriendlyName="Nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_HechoControlDeAcuerdos" msprop:design-time-name="1205552b-8f2c-4165-816f-05883cec6614" msprop:DbTableName="HechoControlDeAcuerdos" msprop:FriendlyName="HechoControlDeAcuerdos" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdControl" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fcb3166f-8361-4c43-8612-15e460738263" msprop:DbColumnName="IdControl" msprop:FriendlyName="IdControl" type="xs:int" />
+                  <xs:element name="IdTipoAcuerdo" msprop:design-time-name="85d58d3e-2f89-4484-82e1-c339231c21a9" msprop:DbColumnName="IdTipoAcuerdo" msprop:FriendlyName="IdTipoAcuerdo" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdAcuerdo" msprop:design-time-name="0b4f0697-cbf5-4684-9056-127a00531b7a" msprop:DbColumnName="IdAcuerdo" msprop:FriendlyName="IdAcuerdo" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdFecha" msprop:design-time-name="7d05f8ca-32f9-48c9-b851-195a89aea93e" msprop:DbColumnName="IdFecha" msprop:FriendlyName="IdFecha" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="IdPais" msprop:design-time-name="1078bf35-ba04-49ee-a89d-163ffdf6cb15" msprop:DbColumnName="IdPais" msprop:FriendlyName="IdPais" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_HechoControlDeEventos" msprop:design-time-name="62093872-66a5-4f88-b9ec-d9b310e6d4e1" msprop:DbTableName="HechoControlDeEventos" msprop:FriendlyName="HechoControlDeEventos" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdControl" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="135d2fdb-647b-473c-8a2f-db428069ca16" msprop:DbColumnName="IdControl" msprop:FriendlyName="IdControl" type="xs:int" />
+                  <xs:element name="IdEvento" msprop:design-time-name="99e996f4-c4cf-4645-9b84-1dde20fda5de" msprop:DbColumnName="IdEvento" msprop:FriendlyName="IdEvento" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdOrganizador" msprop:design-time-name="a6692b3d-dda7-4d79-a4dd-be4645a249e7" msprop:DbColumnName="IdOrganizador" msprop:FriendlyName="IdOrganizador" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdPais" msprop:design-time-name="d40a7706-07cd-491f-bcdf-11aa5237ffd0" msprop:DbColumnName="IdPais" msprop:FriendlyName="IdPais" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdFechaFin" msprop:design-time-name="40e74cd1-541e-4821-b40d-3d30cc416eb0" msprop:DbColumnName="IdFechaFin" msprop:FriendlyName="IdFechaFin" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="IdModalidad" msprop:design-time-name="bb823b65-884a-4a54-95c3-e7f3933c5cbd" msprop:DbColumnName="IdModalidad" msprop:FriendlyName="IdModalidad" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdRegion" msprop:design-time-name="5c1ccc20-05e9-41e4-908f-efd75be5c138" msprop:DbColumnName="IdRegion" msprop:FriendlyName="IdRegion" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdUNDOrganica" msprop:design-time-name="154496d3-3c1b-4c83-9671-dbf88bb4c1e0" msprop:DbColumnName="IdUNDOrganica" msprop:FriendlyName="IdUNDOrganica" type="xs:int" minOccurs="0" />
+                  <xs:element name="Informe" msprop:design-time-name="10646d9f-f652-44dc-bc29-d3ab21b67c65" msprop:DbColumnName="Informe" msprop:FriendlyName="Informe" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_HechoPOI" msprop:design-time-name="14844ee8-96b2-4f17-9ce7-41ace94d5b86" msprop:DbTableName="HechoPOI" msprop:FriendlyName="HechoPOI" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdProduccion" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0d35f2d8-952c-472a-85a1-3e61d931eba9" msprop:DbColumnName="IdProduccion" msprop:FriendlyName="IdProduccion" type="xs:int" />
+                  <xs:element name="IdMetaFisica" msprop:design-time-name="da94e589-fee2-41ec-a614-136deb916f48" msprop:DbColumnName="IdMetaFisica" msprop:FriendlyName="IdMetaFisica" type="xs:int" minOccurs="0" />
+                  <xs:element name="IdFecha" msprop:design-time-name="e3b54450-207b-4d40-a388-12b07770c3b4" msprop:DbColumnName="IdFecha" msprop:FriendlyName="IdFecha" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ActProgramadas" msprop:design-time-name="7a2da60f-08bc-46a2-9a0c-c424ee9ba8f8" msprop:DbColumnName="ActProgramadas" msprop:FriendlyName="ActProgramadas" type="xs:int" minOccurs="0" />
+                  <xs:element name="ActEjecutadas" msprop:design-time-name="96a8825b-46f2-460c-beab-a4f0f4920ed5" msprop:DbColumnName="ActEjecutadas" msprop:FriendlyName="ActEjecutadas" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimAcuerdos" />
+          <xs:field xpath="IdAcuerdo" />
+        </xs:unique>
+        <xs:unique name="DW_DimEventos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimEventos" />
+          <xs:field xpath="IdEvento" />
+        </xs:unique>
+        <xs:unique name="DW_DimMetasProduccion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimMetasProduccion" />
+          <xs:field xpath="IdMetaFisica" />
+        </xs:unique>
+        <xs:unique name="DW_DimModalidades_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimModalidades" />
+          <xs:field xpath="IdModalidad" />
+        </xs:unique>
+        <xs:unique name="DW_DimOrganizadores_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimOrganizadores" />
+          <xs:field xpath="IdOrganizador" />
+        </xs:unique>
+        <xs:unique name="DW_DimPaises_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimPaises" />
+          <xs:field xpath="IdPais" />
+        </xs:unique>
+        <xs:unique name="DW_DimRegiones_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimRegiones" />
+          <xs:field xpath="id_region" />
+        </xs:unique>
+        <xs:unique name="DW_DimTiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimTiempo" />
+          <xs:field xpath="IdFecha" />
+        </xs:unique>
+        <xs:unique name="DW_DimTiposAcuerdo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimTiposAcuerdo" />
+          <xs:field xpath="IdTipoAcuerdo" />
+        </xs:unique>
+        <xs:unique name="DW_DimUNDOrganica_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_DimUNDOrganica" />
+          <xs:field xpath="IdUND" />
+        </xs:unique>
+        <xs:unique name="DW_HechoControlDeAcuerdos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_HechoControlDeAcuerdos" />
+          <xs:field xpath="IdControl" />
+        </xs:unique>
+        <xs:unique name="DW_HechoControlDeEventos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdControl" />
+        </xs:unique>
+        <xs:unique name="DW_HechoPOI_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_HechoPOI" />
+          <xs:field xpath="IdProduccion" />
+        </xs:unique>
+        <xs:keyref name="FK_POI_Tiempo" refer="DW_DimTiempo_Constraint1">
+          <xs:selector xpath=".//DW_HechoPOI" />
+          <xs:field xpath="IdFecha" />
+        </xs:keyref>
+        <xs:keyref name="FK_POI_MetaFisica" refer="DW_DimMetasProduccion_Constraint1">
+          <xs:selector xpath=".//DW_HechoPOI" />
+          <xs:field xpath="IdMetaFisica" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Modalidades" refer="DW_DimModalidades_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdModalidad" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Organizadores" refer="DW_DimOrganizadores_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdOrganizador" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_UNDOrganica" refer="DW_DimUNDOrganica_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdUNDOrganica" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Regiones" refer="DW_DimRegiones_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdRegion" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Evento" refer="DW_DimEventos_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdEvento" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Tiempo_Fin" refer="DW_DimTiempo_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdFechaFin" />
+        </xs:keyref>
+        <xs:keyref name="FK_CE_Paises" refer="DW_DimPaises_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeEventos" />
+          <xs:field xpath="IdPais" />
+        </xs:keyref>
+        <xs:keyref name="FK_CDA_AcuerdoS" refer="Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeAcuerdos" />
+          <xs:field xpath="IdAcuerdo" />
+        </xs:keyref>
+        <xs:keyref name="FK_CDA_TipoAcuerdo" refer="DW_DimTiposAcuerdo_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeAcuerdos" />
+          <xs:field xpath="IdTipoAcuerdo" />
+        </xs:keyref>
+        <xs:keyref name="FK_CDA_Pais" refer="DW_DimPaises_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeAcuerdos" />
+          <xs:field xpath="IdPais" />
+        </xs:keyref>
+        <xs:keyref name="FK_CDA_Fecha" refer="DW_DimTiempo_Constraint1">
+          <xs:selector xpath=".//DW_HechoControlDeAcuerdos" />
+          <xs:field xpath="IdFecha" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW_x0020_Migraciones_x0020_PM xmlns="" />
+  </Schema>
+</DataSourceView>

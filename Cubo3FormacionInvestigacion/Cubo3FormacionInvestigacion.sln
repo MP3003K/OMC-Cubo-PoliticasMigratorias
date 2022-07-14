@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1913
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cubo3FormacionInvestigacion", "Cubo3FormacionInvestigacion\Cubo3FormacionInvestigacion.dwproj", "{ABC24221-5027-4079-BC5E-FDDDFE6176CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC24221-5027-4079-BC5E-FDDDFE6176CE}.Development|Default.ActiveCfg = Development
+		{ABC24221-5027-4079-BC5E-FDDDFE6176CE}.Development|Default.Build.0 = Development
+		{ABC24221-5027-4079-BC5E-FDDDFE6176CE}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADBDC612-E6A5-44A2-9E29-1F9AD13EBD78}
+	EndGlobalSection
+EndGlobal
